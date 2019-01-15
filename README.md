@@ -13,3 +13,4 @@ Important links:
 * [Graphics Checklist](https://github.com/nick-ulle/teaching-notes/blob/master/sta141a/graphics_checklist.pdf)
 
 This my edit
+This is the local edit
