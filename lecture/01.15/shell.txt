@@ -1,0 +1,453 @@
+nick ~ $ pwd
+/home/nick
+nick ~ $ ls
+Documents  nltk_data   workshop  Zotero   market         TODO.md
+garden     university  yard      archive  TIMESHEET.csv
+nick ~ $ cd university/
+learn/ teach/
+nick ~ $ cd university/teach/
+nick teach $ cd sta141b/
+nick sta141b $ ls
+docs  hw  private  public  sandbox  data
+nick sta141b $ cd sandbox/
+nick sandbox $ ls
+notes  notes.ipynb
+nick sandbox $ cd ..
+nick sta141b $ mkdir test
+nick sta141b $ cd test/
+nick test $ man ls
+nick test $ git config --global user.name "Nick Ulle"
+nick test $ git config --global user.name
+Nick Ulle
+nick test $ git config --global user.email "nick.ulle@gmail.com"
+nick test $ git config --global user.email
+nick.ulle@gmail.com
+nick test $ git clone https://github.com/2019-winter-ucdavis-sta141b/notes.git
+Cloning into 'notes'...
+remote: Enumerating objects: 52, done.
+remote: Counting objects: 100% (52/52), done.
+remote: Compressing objects: 100% (35/35), done.
+remote: Total 52 (delta 17), reused 40 (delta 7), pack-reused 0
+Unpacking objects: 100% (52/52), done.
+nick test $ ls
+notes
+nick test $ cd notes/
+nick notes $ ls
+discussion  lecture  faq.md  README.md  rubric.pdf  syllabus.pdf
+nick notes $ git pull
+Already up to date.
+nick notes $ nano README.md
+nick notes $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+nick notes $ git add README.md
+nick notes $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+
+nick notes $ git commit -m "Edited the README file."
+[master e8a2ef0] Edited the README file.
+ 1 file changed, 2 insertions(+)
+nick notes $ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+nick notes $ git log
+commit e8a2ef0b679b3584b00f77ba123f8c9f870027c7 (HEAD -> master)
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Tue Jan 15 09:45:59 2019 -0800
+
+    Edited the README file.
+
+commit 75c39627024d1d5160995855466d85a27f3d74df (origin/master, origin/HEAD)
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Mon Jan 14 17:18:26 2019 -0800
+
+    Add 3rd lecture notes.
+
+commit f6795f03c29fc6feb2c36b30437aafc2636d482c
+Author: xidwang <36823208+xidwang@users.noreply.github.com>
+Date:   Thu Jan 10 13:43:14 2019 -0800
+
+Author: xidwang <36823208+xidwang@users.noreply.github.com>
+Date:   Thu Jan 10 13:43:14 2019 -0800
+
+    Add files via upload
+
+commit 1f31a7096537e47ed68c59dc98c1e158e20a7a91
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Thu Jan 10 12:55:03 2019 -0800
+
+    Update second lecture notes.
+
+commit cc117f9fa647ca85e803a1c95bd1ec6eb5412607
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Thu Jan 10 11:46:05 2019 -0800
+
+    Add .gitignore.
+
+commit 25b56d7a286bbf5a3ed0b884a583d357e8299d68
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Wed Jan 9 20:38:45 2019 -0800
+
+    Add second lecture notes.
+
+nick notes $ ls
+discussion  lecture  faq.md  README.md  rubric.pdf  syllabus.pdf
+nick notes $ mkdir test
+nick notes $ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+nick notes $ cd test/
+nick test $ nano newfile.md
+nick test $ ls
+newfile.md
+nick test $ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+nick test $ cd ..
+nick notes $ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+nick notes $ git add test/
+nick notes $ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test/newfile.md
+
+nick notes $ git commit
+Aborting commit due to empty commit message.
+nick notes $ nvim
+nick notes $ ls
+discussion  lecture  test  faq.md  README.md  rubric.pdf  syllabus.pdf
+nick notes $ cd ..
+nick test $ ls
+notes
+nick test $ cd ..
+nick sta141b $ ls
+docs  hw  private  public  sandbox  test  data
+nick sta141b $ cd ..
+nick teach $ ls
+2018.1-sta141a  archive  data  sta141b  sta160  teaching-notes  carpentry.md  references.md
+nick teach $ cd teaching-notes/
+nick teaching-notes $ ls
+data  references  sta141  sta141a  sta141b  sta160  tools  workshops  LICENSE  README.md
+nick teaching-notes $ cd sta141a/
+nick sta141a $ ls
+2016  2017  graphics_checklist.pdf
+nick sta141a $ cd 2017/
+nick 2017 $ ls
+discussion05  discussion10    discussion01.R  discussion03.R  discussion09.R
+discussion07  discussion00.R  discussion02.R  discussion04.R  README.md
+nick 2017 $ nvim discussion02.R
+nick 2017 $ cd ..
+nick sta141a $ ls
+2016  2017  graphics_checklist.pdf
+nick sta141a $ cd ..
+nick teaching-notes $ ls
+data  references  sta141  sta141a  sta141b  sta160  tools  workshops  LICENSE  README.md
+nick teaching-notes $ ls
+data  references  sta141  sta141a  sta141b  sta160  tools  workshops  LICENSE  README.md
+nick teaching-notes $ cd ..
+nick teach $ ls
+2018.1-sta141a  archive  data  sta141b  sta160  teaching-notes  carpentry.md  references.md
+nick teach $ cd sta141b
+nick sta141b $ ls
+docs  hw  private  public  sandbox  test  data
+nick sta141b $ cd test/
+nick test $ ls
+notes
+nick test $ cd notes/
+nick notes $ ls
+discussion  lecture  test  faq.md  README.md  rubric.pdf  syllabus.pdf
+nick notes $ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test/newfile.md
+
+nick notes $ git reset HEAD test/newfile.md
+nick notes $ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        test/
+
+nothing added to commit but untracked files present (use "git add" to track)
+nick notes $ git log
+commit e8a2ef0b679b3584b00f77ba123f8c9f870027c7 (HEAD -> master)
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Tue Jan 15 09:45:59 2019 -0800
+
+    Edited the README file.
+
+commit 75c39627024d1d5160995855466d85a27f3d74df (origin/master, origin/HEAD)
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Mon Jan 14 17:18:26 2019 -0800
+
+    Add 3rd lecture notes.
+
+commit f6795f03c29fc6feb2c36b30437aafc2636d482c
+Author: xidwang <36823208+xidwang@users.noreply.github.com>
+Date:   Thu Jan 10 13:43:14 2019 -0800
+
+    Add files via upload
+
+commit 1f31a7096537e47ed68c59dc98c1e158e20a7a91
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Thu Jan 10 12:55:03 2019 -0800
+
+    Update second lecture notes.
+nick notes $ git push
+Username for 'https://github.com': nick-ulle
+Password for 'https://nick-ulle@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/2019-winter-ucdavis-sta141b/notes.git/'
+nick notes $ git push
+Username for 'https://github.com': nick-ulle
+Password for 'https://nick-ulle@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 309 bytes | 309.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/2019-winter-ucdavis-sta141b/notes.git
+   75c3962..e8a2ef0  master -> master
+nick notes $ git remote -v
+origin  https://github.com/2019-winter-ucdavis-sta141b/notes.git (fetch)
+origin  https://github.com/2019-winter-ucdavis-sta141b/notes.git (push)
+nick notes $ ls
+discussion  lecture  test  faq.md  README.md  rubric.pdf  syllabus.pdf
+nick notes $ git add test/
+nick notes $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   test/newfile.md
+
+nick notes $ git commit -m "Add the test file."
+[master 57063d9] Add the test file.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test/newfile.md
+nick notes $ git push
+Username for 'https://github.com': nick-ulle
+Password for 'https://nick-ulle@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 332 bytes | 332.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/2019-winter-ucdavis-sta141b/notes.git
+   e8a2ef0..57063d9  master -> master
+nick notes $ ls
+discussion  lecture  test  faq.md  README.md  rubric.pdf  syllabus.pdf
+nick notes $ cd test
+nick test $ rm newfile.md
+nick test $ ls
+nick test $ cd ..
+nick notes $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    test/newfile.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+nick notes $ git add test/newfile.md
+nick notes $ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        deleted:    test/newfile.md
+
+nick notes $ git commit -m "Delete the testfile."
+[master 06e1b97] Delete the testfile.
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 test/newfile.md
+nick notes $ git push
+Username for 'https://github.com': ^C
+nick notes $ git log
+commit 06e1b97911bffba68191f85ef32346ef8d49440f (HEAD -> master)
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Tue Jan 15 10:13:04 2019 -0800
+
+    Delete the testfile.
+
+commit 57063d96819cf1498d5605c3a71f49e6b8807181 (origin/master, origin/HEAD)
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Tue Jan 15 10:10:15 2019 -0800
+
+    Add the test file.
+
+commit e8a2ef0b679b3584b00f77ba123f8c9f870027c7
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Tue Jan 15 09:45:59 2019 -0800
+
+    Edited the README file.
+
+commit 75c39627024d1d5160995855466d85a27f3d74df
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Mon Jan 14 17:18:26 2019 -0800
+
+    Add 3rd lecture notes.
+nick notes $ ls
+discussion  lecture  test  faq.md  README.md  rubric.pdf  syllabus.pdf
+nick notes $ nvim README.md
+nick notes $ nano README.md
+nick notes $
+nick notes $ nano README.md
+nick notes $ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+nick notes $ git add README.md
+nick notes $ git commit -m "Updated the README on my machine."
+[master e86a4c8] Updated the README on my machine.
+ 1 file changed, 1 insertion(+)
+nick notes $ git log
+commit e86a4c88a9f4b239bd097dd854386a56b0f2a5e5 (HEAD -> master)
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Tue Jan 15 10:18:12 2019 -0800
+
+    Updated the README on my machine.
+
+commit 06e1b97911bffba68191f85ef32346ef8d49440f
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Tue Jan 15 10:13:04 2019 -0800
+
+    Delete the testfile.
+
+commit 57063d96819cf1498d5605c3a71f49e6b8807181 (origin/master, origin/HEAD)
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Tue Jan 15 10:10:15 2019 -0800
+
+    Add the test file.
+
+commit e8a2ef0b679b3584b00f77ba123f8c9f870027c7
+Author: Nick Ulle <nick.ulle@gmail.com>
+Date:   Tue Jan 15 09:45:59 2019 -0800
+
+    Edited the README file.
+nick notes $ git push
+Username for 'https://github.com': nick-ulle
+Password for 'https://nick-ulle@github.com':
+To https://github.com/2019-winter-ucdavis-sta141b/notes.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/2019-winter-ucdavis-sta141b/notes.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+nick notes $ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/2019-winter-ucdavis-sta141b/notes
+   57063d9..5b29607  master     -> origin/master
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+nick notes $ nano README.md
+nick notes $ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+nick notes $ git add README.md
+nick notes $ git commit -m "Fix conflict."
+[master a889cb7] Fix conflict.
+nick notes $ git push
+Username for 'https://github.com': nick-ulle
+Password for 'https://nick-ulle@github.com':
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 796 bytes | 796.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.
+To https://github.com/2019-winter-ucdavis-sta141b/notes.git
+   5b29607..a889cb7  master -> master
+n
