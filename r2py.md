@@ -20,31 +20,38 @@ Notation:
 
 ### Core
 
-R                 | Python           | Description
---------          | ----             | --
-`?f`              | `help(f)`        | Get help
-`1+1i`            | `1+1j`           | Complex numbers
-`2^3`             | `2**3`           | Exponentiation
-`4 %% 2`          | `4 % 2`          | Remainder after division (modulus)
-`typeof(42)`      | `type(42)`       | Get type
-`class(42)`       | `type(42)`       | Get class (Python classes are types)
-`f = function()`  | `def f():`       | Create function
-`list("a", "b")`  | `["a", "b"]`     | Create list
-`list(a = 3)`     | `{"a": 3}`       | Create dictionary
-`seq(0, 9)`       | `range(10)`      | Create integer sequence
-`seq_len(10)`     | `range(1, 11)`   | Create integer sequence
-`seq.along(x)`    | `enumerate(x)`   | Enumerate sequence
-`do.call(f, x)`   | `f(*x)`          | Call function with arguments in list
-`lapply(f, x)`    | `map(f, x)`      | Functional map
-`which(x)`        | `np.where(x)`    | Get indexes of non-false values
-`names(x)`        | `x.keys()`       | Get names of dictionary keys
-`as.integer(x)`   | `int(x)`         | Cast scalar to integer
-`as.double(x)`    | `float(x)`       | Cast scalar to floating point
-`as.complex(x)`   | `complex(x)`     | Cast scalar to complex
-`as.character(x)` | `str(x)`         | Cast scalar to string
-`as.list(x)`      | `list(x)`        | Cast to list
-`message("Hi!")`  | `print("Hi!")`   | Print to console
-`rev(x)`          | `reversed(x)`    | Reverse a sequence
+R                    | Python              | Description
+--------             | ----                | --
+`?f`                 | `help(f)`           | Get help
+`1+1i`               | `1+1j`              | Complex numbers
+`2^3`                | `2**3`              | Exponentiation
+`4 %% 2`             | `4 % 2`             | Remainder after division (modulus)
+`!x`                 | `not x`             | Complement
+`!x`                 | `~x`                | Complement (NumPy)
+`typeof(42)`         | `type(42)`          | Get type
+`class(42)`          | `type(42)`          | Get class (Python classes are types)
+`f = function()`     | `def f():`          | Create function
+`list("a", "b")`     | `["a", "b"]`        | Create list
+`list(a = 3)`        | `{"a": 3}`          | Create dictionary
+`seq(0, 9)`          | `range(10)`         | Create integer sequence
+`seq_len(10)`        | `range(1, 11)`      | Create integer sequence
+`seq.along(x)`       | `enumerate(x)`      | Enumerate sequence
+`do.call(f, x)`      | `f(*x)`             | Call function with arguments in list
+`lapply(f, x)`       | `map(f, x)`         | Functional map
+`which(x)`           | `np.where(x)`       | Get indexes of non-false values
+`names(x)`           | `x.keys()`          | Get names of dictionary keys
+`"hi" %in% x`        | `"hi" in x`         | Check for value in list
+`"hi" %in% names(x)` | `"hi" in x`         | Check for key in dictionary
+`as.integer(x)`      | `int(x)`            | Cast scalar to integer
+`as.double(x)`       | `float(x)`          | Cast scalar to floating point
+`as.complex(x)`      | `complex(x)`        | Cast scalar to complex
+`as.character(x)`    | `str(x)`            | Cast scalar to string
+`as.list(x)`         | `list(x)`           | Cast to list
+`message("Hi!")`     | `print("Hi!")`      | Print to console
+`rev(x)`             | `reversed(x)`       | Reverse a sequence
+`browser()`          | `breakpoint()`      | Run debugger (Python >= 3.7)
+`table(x)`           | `x.value_counts()`  | Count elements (pandas)
+`table(x, y)`        | `pd.crosstab(x, y)` | Crosstabulate elements
 
 ### Indexing and Slicing
 
@@ -106,6 +113,8 @@ R                     | Python                        | Description
 `colnames(df)`        | `df.columns`                  | Get/set column names
 `rownames(df)`        | `df.index`                    | Get/set row names
 `rownames(df) = NULL` | `df.reset_index(drop = True)` | Reset row names
+`str(df)`             | `df.info()`                   | Summarize structure
+`summary(df)`         | `df.describe()`               | Summarize content
 `rbind(x, y)`         | `pd.concat([x, y])`           | Bind rows
 `cbind(x, y)`         | `pd.concat([x, y], axis = 1)` | Bind columns
 `is.na(df)`           | `df.isna()`                   | Detect missing values
@@ -113,6 +122,8 @@ R                     | Python                        | Description
 `df[1, 3]`            | `df.iloc[0, 2]`               | Index by location
 `df[, "my_col"]`      | `df.loc[:, "my_col"]`         | Index by name
 `df[condition, ]`     | `df.loc[condition, :]`        | Index by Boolean
+`sapply(df, f)`       | `df.apply(f)`                 | Functional map over columns
+`apply(df, 1, f)`     | `df.apply(f, axis = 1)`       | Functional map over rows
 
 ### Strings
 
@@ -134,6 +145,7 @@ attribute, as in `df["my_col"].str.lower()`.
 
 Many of these are also available in base R.
 
-R             | Python      | Description
---------      | ----        | --
-`str_trim(x)` | `x.strip()` | Trim whitespace
+R              | Python      | Description
+--------       | ----        | --
+`str_trim(x)`  | `x.strip()` | Trim whitespace
+`str_split(x)` | x.split()`  | Split string
