@@ -40,16 +40,18 @@ Quant NY][NY]. A sample project will be posted in the next week or two.
 
 [NY]: http://iquantny.tumblr.com/post/144197004989/the-nypd-was-systematically-ticketing-legally
 
+## Components
+
 The final project has four components:
 
-Name         | Due
------------- | ---
-Proposal     | Feb 4
-Presentation | Week 10
-Report       | Finals Week, TBA
-Team Review  | Finals Week, TBA
+Name             | Due
+------------     | ---
+Proposal         | Feb 4
+Presentation     | Week 10
+Report           | Finals Week, TBA
+Group Evaluation | Finals Week, TBA
 
-## Proposal
+### Proposal
 
 Your group should submit a 1-2 page project proposal (1 per group) by
 __February 4th__. Your proposal should address:
@@ -78,13 +80,13 @@ be working on the project itself; don't spend more than a few hours working on
 the proposal. Make sure all group members have read the proposal and agree on
 what it says.
 
-## Presentation
+### Presentation
 
 Your group will give an approximately 5-minute in-class presentation in __week
 10__. All group members will be required to speak. More information about the
 presentations will be released in week 8.
 
-## Report (grading criteria)
+### Report (grading criteria)
 
 The final report is due in __finals week__. The report should be 8-10 pages
 including writing and visualizations, but excluding code. 
@@ -138,7 +140,7 @@ shown in your project should be roughly proportional to the number of people
 in your group.
 
 
-## Group Evaluation
+### Group Evaluation
 
 Each group member is required to individually submit a 1-page evaluation of
 their group. The group evaluation is due in __finals week__.
