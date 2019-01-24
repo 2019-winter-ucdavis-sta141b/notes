@@ -8,6 +8,7 @@ Important links:
 * [Participation Log](https://goo.gl/forms/I2Ws5iltOPLVJeEi1)
 * [References](https://github.com/nick-ulle/teaching-notes/blob/master/references/sta141b.md)
 * [Translating Between R and Python](r2py.md)
+* [Project Description](project.md)
 
 Logistics:
 
