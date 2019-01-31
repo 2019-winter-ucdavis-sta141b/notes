@@ -36,9 +36,14 @@ Once you've selected a project topic, you can start working on the project
 proposal and the project itself.
 
 As inspiration and an example of what can be done with public datasets, see [I
-Quant NY][NY]. A sample project will be posted in the next week or two.
+Quant NY][NY]. Sample projects from previous years:
+
+* [Sample 1][s1]
+* [Sample 2](https://palautatan.github.io/project141b/).
 
 [NY]: http://iquantny.tumblr.com/post/144197004989/the-nypd-was-systematically-ticketing-legally
+
+[s1]: https://nachanta.github.io/Portfolio/The%2BGender%2BGap_STA141B%2BFinal%2BProject%20(1).html
 
 ## Components
 
