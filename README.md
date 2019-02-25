@@ -9,6 +9,7 @@ Important links:
 * [References](https://github.com/nick-ulle/teaching-notes/blob/master/references/sta141b.md)
 * [Translating Between R and Python](r2py.md)
 * [Project Description](project.md)
+* [Presentation Description](presentation.md)
 
 Logistics:
 
