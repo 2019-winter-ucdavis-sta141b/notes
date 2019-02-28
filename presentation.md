@@ -9,6 +9,11 @@ The project presentations will be in class on Tuesday __March 12__ and Thursday
 __March 14__. Grading for groups that present on Thursday will be a little bit
 stricter, since they have more time.
 
+[CLICK HERE][su] to reserve a time for your group's presentation. Put the name
+of your group in the __What__ field when you reserve a time. Please only sign
+up once per group. You may need to click through the calendar to get to the
+correct dates.
+
 This page will be updated with a link to sign up for a presentation time slot
 on __Feb 27 at 6pm__.
 
@@ -28,6 +33,8 @@ where you want feedback.
 
 Asking questions at the end of someone's presentation is a good way to improve
 your participation score.
+
+[su]: https://calendar.google.com/calendar/selfsched?sstoken=UURqOTI4QUdMbEU5fGRlZmF1bHR8ZmU0ZTFkZGVlY2M0ZTg4MjhiNTY5MmQ4NmJiMTQxZTg
 
 ## Peer Feedback
 
