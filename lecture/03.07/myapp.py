@@ -42,8 +42,17 @@ p.scatter("fertility_rate", "life_expectancy", size = "log_pop",
 years = gapminder["year"].unique()
 
 def callback(attr, old, new):
-    # CODE GOES HERE
-    pass
+    # Compute the closest year to the slider year.
+    idx = np.abs(years - slider.value).argmin()
+    value = years[idx]
+
+    # Subset the data with the year.
+    is_year = gapminder["year"] == value
+    new_source = ColumnDataSource(gapminder[is_year])
+
+    # Set the title and update the data source.
+    p.title.text = str(value)
+    source.data = new_source.data
 
 slider.on_change("value", callback)
 # ------------------------------------------------------------
